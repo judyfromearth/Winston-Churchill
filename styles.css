@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: url('Sir_Winston_Churchill_-_19086236948.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with transparency */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.quote {
+    margin: 1em;
+    padding: 1em;
+    background-color: transparent; /* No background color */
+}
+
+.english {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.korean {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.situation {
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+p {
+    margin: 0.5em 0;
+}
