@@ -5,8 +5,9 @@ body, html {
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
-    background: url('Sir_Winston_Churchill_-_19086236948.jpg') no-repeat center center fixed; 
+    background: url('Sir_Winston_Churchill_-_19086236948.jpg') no-repeat center top fixed;
     background-size: cover;
+    background-position: center 10%;
 }
 
 .container {
@@ -14,7 +15,7 @@ body, html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.6); /* Black background with transparency */
     padding: 20px;
     box-sizing: border-box;
@@ -22,38 +23,61 @@ body, html {
 
 header {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h1 {
     margin: 0.5em;
     font-size: 2em;
     font-weight: bold;
+    font-family: 'Song Myung', serif;
+    color: crimson;
 }
 
 h2 {
     margin: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
+    font-family: 'Song Myung', serif;
+}
+
+.credit {
+    font-size: 0.9em;
+    font-family: 'Song Myung', serif;
+    color: white;
 }
 
 .quote {
     margin: 1em;
     padding: 1em;
     background-color: transparent; /* No background color */
+    width: 80%;
+    max-width: 600px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .english {
     font-size: 1.2em;
     font-weight: bold;
+    font-family: 'Song Myung', serif;
+    line-height: 1.5;
 }
 
 .korean {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: normal;
+    font-family: 'Song Myung', serif;
+    color: lightgray;
+    line-height: 1.5;
 }
 
 .situation {
-    font-size: 0.8em;
+    font-size: 0.7em;
     background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
     padding: 10px;
     border-radius: 10px;
@@ -62,4 +86,34 @@ h2 {
 
 p {
     margin: 0.5em 0;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .credit {
+        font-size: 0.8em;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+    .english {
+        font-size: 1em;
+    }
+
+    .korean {
+        font-size: 0.8em;
+    }
+
+    .situation {
+        font-size: 0.6em;
+    }
 }
